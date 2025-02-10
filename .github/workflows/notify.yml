@@ -1,9 +1,9 @@
 name: Notify event details
 on: issues
 jobs: 
-  output:
-    name: Output data
+  my_job:
     runs-ons: ubuntu-24.04-arm
     steps:
-      - uses: checkout/checkout@v4
+      - run: echo "${{ toJSON(github.event) }}"
+
 
