@@ -2,7 +2,7 @@ name: Notify event details
 on: issues
 jobs: 
   my_job:
-    runs-ons: ubuntu-24.04-arm
+    runs-on: ubuntu-24.04-arm
     steps:
       - run: echo "${{ toJSON(github.event) }}"
 
