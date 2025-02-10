@@ -9,7 +9,7 @@ jobs:
         name: Checkout
       - run: npm ci
         name: Install Node
-      - run: npm lint
+      - run: npm run lint
         name: Lint code
   
   test:
